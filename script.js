@@ -8,7 +8,7 @@ window.addEventListener("scroll", ScollOn())
 //function
 function ScrollOn() {
   var sY = window.scrollY;
-  var sX = window.scrollX<
+  var sX = window.scrollX;
   Moon.style.left = (250 - sY*0.31) +"px";
   Cloud1.style.left = (200 + sY*0.4 ) + "px";
   Cloud1.style.top = (360 + sY*0.1) + "px";
