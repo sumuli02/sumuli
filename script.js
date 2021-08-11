@@ -1,5 +1,4 @@
 const $Moon = document.getElementById("Moon")
-const $Demo = document.getElementById("demo")
 const $Cloud1 = document.getElementById("Cloud1")
 const $Cloud2 = document.getElementById("Cloud2")
 const $Castle = document.getElementById("Castle")
