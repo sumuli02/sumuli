@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+/*Main*/
+h1 {color:black; font-size: 5vw; padding-left: 1vw; padding-top: 1vw;}
+a {font-size: 3vw; padding-left: 18vw; padding-top: 10vw;}
+a:hover {text-decoration: underline; color:blue}

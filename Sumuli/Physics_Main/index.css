@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@font-face {
+    font-family: 'Chalkduster';
+    src: url('../fonts/Chalkduster.ttf');
+}
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+/*Main*/
+
+/*Physics*/
+/*if the background color is grey, the cursor disappears due to mix-blend-mode*/
+.cursor {pointer-events: none;z-index:100;}
+.cursor__circle{position:fixed; top:0; left:0; z-index:100; mix-blend-mode: difference;}
+
+/*display:flex; flex-direction: column;
+  justify-content: center; align-items: center; */
+.FindACat {width: 100vw; height:155vw; background:black ; z-index: 1; }
+.Explain {display: block; padding-top: 10vw; background: black ; height:33vw; }
+
+.FindACat h1 {font-size: 1.8vw; text-align: center; padding-top: 1vw; color:#fff;}
+.FindACat h2 {font-size: 1vw; text-align:center; padding-top:1vw; color:#fff;}
+.FindACat h3 {font-size: 5vw; color:#000; text-align: center; padding-top: 1vw;}
+.FindACat h1, h2, h3, a, p{font-family: "Chalkduster";}
+
+.FindACat .line {position: absolute; top: 43vw; left:25vw; background:black; width:50vw; height:1px; }
+
+.FindACat p{position:absolute; top: 97vw; left:41.5vw;font-size: 4vw; }
+.FindACat a {height:5vw;padding-top: 7vw; padding-bottom: 7vw;padding-left: 1vw; padding-right: 1em; font-size: 2vw; border: double 0.3vw black; transition: border-width 0.1s linear;
+text-align: center; line-height: 5.5vw; border-radius: 1vw; }
+.FindACat a:nth-child(4){position:absolute; top: 30em; left:8em; }
+.FindACat a:nth-child(5){position:absolute; top: 30em; right:8em; padding-left: 3em; padding-right: 3em;}
+.FindACat a:nth-child(7){position:absolute; top: 59.4em; left:8em; padding-left: 5.5em; padding-right: 5.5em;}
+.FindACat a:nth-child(6){position:absolute; top: 59.4em; right:8em; padding-left: 2.3em; padding-right: 2.3em;}
+
+.FindACat p:hover {color:#000 ;z-index:200; font-weight: bolder; }
+.FindACat a:hover {color:#000 ;z-index:200; border-width: 1vw; }
+
+/*Minimenu*/
+.MiniMenu {position:fixed; bottom:5px; left:5px; background:#3f647e url(MenuImage.png) no-repeat 10px 15px; background-size: 30px 20px; border-radius: 15px; width:50px; height:50px; line-height: 120px; text-align: center;
+z-index: 1000; border: solid 0.5vw black;}
+.MiniMenu a {color:transparent}
+.MiniMenu:hover {border: transparent; background:transparent; width: 98.5vw; height: 50px; line-height: 0px; }
+.MiniMenu:hover a {color:black;display: inline-block; padding-left: 3vw; padding-right: 2.5vw;font-family: Arial; font-size: 1vw;
+  padding-top: 20px; z-index: 0; border: solid #9fc1d3;border-width: thin; height:20px; background: #688fad}
+.MiniMenu a:hover{border-width: thick; font-weight: bold}

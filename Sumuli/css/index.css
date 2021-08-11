@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@font-face {
+    font-family: 'Chalkduster';
+    src: url('../fonts/Chalkduster.ttf');
+}
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+/*Main*/
+
+/*Physics*/
+/*CatWalk*/
+@keyframes Walking{ 0% {background-color:red}
+  50% {background-color:white}
+  100% {background-color:yellow}
+  }
+.BlackCatWalk {width: 100px; height: 100px; position: relative; background-color: red;
+  animation-name: Walking; animation-duration: 4s;}
+/*if the background color is grey, the cursor disappears due to mix-blend-mode*/
+.cursor {pointer-events: none;z-index:100;}
+.cursor__circle{position:fixed; top:0; left:0; z-index:100; mix-blend-mode: difference;}
+
+/*display:flex; flex-direction: column;
+  justify-content: center; align-items: center; */
+.FindACat {width: 100vw; height:130vw; background:black; z-index: 1;}
+.FindACat h1 {font-size: 2.5vw; text-align: center; padding-top: 20vw; color:#fff;}
+.FindACat h2 {font-size: 1.1vw; text-align:center; padding-top:1vw; color:#fff;}
+.FindACat h1, h2, a, p{font-family: "Chalkduster";}
+.FindACat p{position:absolute; top: 75vw; left:43vw;font-size: 5vw; }
+.FindACat a {height:5vw;padding-left: 1vw; padding-right: 1vw; font-size: 3vw; border: double 0.2vw black; transition: border-width 0.3s linear;
+text-align: center; line-height: 5.5vw;}
+.FindACat a:nth-child(4){position:absolute; top: 50vw; left:6vw}
+.FindACat a:nth-child(5){position:absolute; top: 50vw; right:10vw}
+.FindACat a:nth-child(7){position:absolute; bottom: -5vw; left:22vw}
+.FindACat a:nth-child(6){position:absolute; bottom: -5vw; right:9vw}
+
+.FindACat p:hover {color:#000 ;z-index:200; font-weight: bolder; }
+.FindACat a:hover {color:#000 ;z-index:200; border-width: 1vw}
+
+
+/*SolarSystem*/
+.SolarSystem {width:1300px; height:1400px; background:#030124; z-index:50}
+.SolarSystem a {color:black;}
+.Planets { position: relative; width: 100%;padding-top:100%; overflow: hidden;}
+
+.Planets text { font-family: 'Helvetica Neue', Arial; font-weight: bold; }
+.Planets svg { position: absolute; left: 0; top: 430px; width: 100%; height: 540px;
+          animation-name: rotate;animation-duration: 5s;animation-iteration-count: infinite;animation-timing-function: linear;}
+.Planets #stationary {animation: none}
+.Planets #circle1 {font-size:3px; animation-duration: 1.47s}
+.Planets #circle2 {font-size:5px; animation-duration: 3.75s}
+.Planets #circle3 {font-size:5px;animation-duration: 6s}
+.Planets #circle4 {font-size:3.5px;animation-duration: 12s}
+.Planets #circle5 {font-size:17px;animation-duration: 72s}
+.Planets #circle6 {font-size:15px;animation-duration: 174s}
+.Planets #circle7 {font-size:10px;animation-duration:504s}
+.Planets #circle8 {font-size:10px;animation-duration: 990s}
+/*990s*/
+.Planets a:hover {color:red;}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}

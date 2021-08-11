@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@font-face {
+    font-family: 'Chalkduster';
+    src: url('../fonts/Chalkduster.ttf');
+}
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{background: #030124; border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+
+/*SolarSystem*/
+.Title h1{color:white; text-align: center; font-size: 6vw; padding-top: 25vw;}
+@media only screen and (max-width:1300px) {
+  .Title h1{position:absolute;width: 1300px;}
+}
+
+.SolarSystem {width:100vw; height:100vh; background:#030124; z-index:50}
+@media only screen and (max-width:1300px) {
+  .SolarSystem {width:1300px}
+}
+@media only screen and (max-height:1400px) {
+  .SolarSystem {height:1400px}
+}
+.SolarSystem a {color:transparent;}
+.Planets { position: relative; width: 100%;padding-top:100%; overflow: hidden;}
+
+.Planets text { font-family: 'Helvetica Neue', Arial; font-weight: bold; }
+.Planets svg { position: absolute; left: 0; top: 430px; width: 100%; height: 540px;
+          animation-name: rotate;animation-duration: 5s;animation-iteration-count: infinite;animation-timing-function: linear;}
+.Planets #stationary {animation: none; z-index: 1000}
+.Planets #circle1 {font-size:3px; animation-duration: 1.47s}
+.Planets #circle2 {font-size:5px; animation-duration: 3.75s}
+.Planets #circle3 {font-size:5px;animation-duration: 6s}
+.Planets #circle4 {font-size:3.5px;animation-duration: 12s}
+.Planets #circle5 {font-size:17px;animation-duration: 72s}
+.Planets #circle6 {font-size:15px;animation-duration: 174s}
+.Planets #circle7 {font-size:10px;animation-duration:504s}
+.Planets #circle8 {font-size:10px;animation-duration: 990s}
+
+.Planets a:hover {color:red;}
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+
+.Information h1 {color:transparent;}
+.Text {color:white;}
+.Text {width: 300px}
+.Text:hover h1{color:#757575;font-family: "Lucida Console", monospace;}
+.Information p {color:transparent; width: 300px; font-size: 14px}
+.Text:hover p {color:#757575; border: solid 2px #757575;}

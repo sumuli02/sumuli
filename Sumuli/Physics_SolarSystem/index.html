@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sumuli</title>
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body >
+<div class="Title">
+  <h1>Solar System</h1>
+
+</div>
+<div class="SolarSystem">
+  <a>square root of the distance (million km for orbit radius, thousand km for planet radius) time calculation earth = 6sec</a>
+<div class="Planets">
+  <svg x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 800 800" enable-background="new 0 0 500 500" xml:space="preserve">
+  <defs>
+      <path id="circlePath1" d="M 300, 300 m -76, 0 a 76,76 0 1,0 152,0 a 76,76 0 1,0 -152,0"/>
+      <path id="circlePath2" d="M 300, 300 m -104, 0 a 104,104 0 1,0 208,0 a 104,104 0 1,0 -208,0"/>
+      <path id="circlePath3" d="M 300, 300 m -122, 0 a 122,122 0 1,0 244,0 a 122,122 0 1,0 -244,0"/>
+      <path id="circlePath4" d="M 300, 300 m -151, 0 a 151,151 0 1,0 302,0 a 151,151 0 1,0 -302,0"/>
+      <path id="circlePath5" d="M 300, 300 m -279, 0 a 279,279 0 1,0 558,0 a 279,279 0 1,0 -558,0"/>
+      <path id="circlePath6" d="M 300, 300 m -379, 0 a 379,379 0 1,0 758,0 a 379,379 0 1,0 -758,0"/>
+      <path id="circlePath7" d="M 300, 300 m -535, 0 a 535,535 0 1,0 1070,0 a 535,535 0 1,0 -1070,0"/>
+      <path id="circlePath8" d="M 300, 300 m -670, 0 a 670,670 0 1,0 1340,0 a 670,670 0 1,0 -1340,0"/>
+
+      <filter id= "f1" x = '-0.5' y = '-0.5' width = "200%" height = "200%">
+        <feOffset result = "OffOut" in="SourceGraphic" dx="0" dy="0"/>
+        <feGaussianBlur result = "BlurOut" in="OffOut" stdDeviation = "3"/>
+        <feBlend in= "SourceGraphic" in2 = "BlurOut" mode = "normal" />
+      </filter>
+</defs>
+</svg>
+<svg id="stationary" viewBox="0 0 600 600">
+  <circle cx = "300" cy = "300" r="26" fill = "#f1b233" filter = "url(#f1)">
+</svg>
+
+<svg id="circle1" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#928efa">
+  <textPath xlink:href="#circlePath1" > MERCURY</textPath>
+  </text>
+</svg>
+
+<svg id="circle2" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#db8d2f">
+  <textPath xlink:href="#circlePath2" >VENUS</textPath>
+  </text>
+</svg>
+
+<svg id="circle3" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#4492d3">
+  <textPath xlink:href="#circlePath3" >EARTH</textPath>
+  </text>
+</svg>
+
+<svg id="circle4" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#ee8059">
+  <textPath xlink:href="#circlePath4" >MARS</textPath>
+  </text>
+</svg>
+
+<svg id="circle5" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#8f7e65">
+  <textPath xlink:href="#circlePath5" >JUPITER</textPath>
+  </text>
+</svg>
+
+<svg id="circle6" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#c19e75">
+  <textPath xlink:href="#circlePath6" >SATURN</textPath>
+  </text>
+</svg>
+
+<svg id="circle7" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#bbdfe3">
+  <textPath xlink:href="#circlePath7" >URANUS</textPath>
+  </text>
+</svg>
+
+<svg id="circle8" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 600 600" enable-background="new 0 0 500 500" xml:space="preserve">
+  <text fill="#334bc0">
+  <textPath xlink:href="#circlePath8" >NEPTUNE</textPath>
+  </text>
+</svg>
+
+</div>
+</div>
+<div class="Information">
+  <div class="Text">
+    <h1>Information</h1>
+    <p>The distances between the Sun and the planets in this animation are proportional to square root of real distance between the Sun and planets. <br><br>
+    Font size of the each planet is proportional to square root of the diameter of the planet<br> <br>
+    Time taken for each planet to orbit the Sun is proportional to real orbit period of planets (1 year = 6 seconds in this animation)</p>
+
+  </div>
+
+</div>
+</body>
+</html>

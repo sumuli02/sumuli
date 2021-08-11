@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sumuli</title>
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body >
+  <div class="cursor">
+    <div class="cursor__circle" id="circle">
+      <svg height = "8vw" width = "8vw">
+        <defs>
+          <filter id= "f1" x = '-0.5' y = '-0.5' width = "200%" height = "200%">
+            <feOffset result = "OffOut" in="SourceGraphic" dx="0" dy="0"/>
+            <feGaussianBlur result = "BlurOut" in="OffOut" stdDeviation = "3"/>
+            <feBlend in= "SourceGraphic" in2 = "BlurOut" mode = "normal" />
+          </filter>
+        </defs>
+        <circle cx = "4vw" cy = "4vw" r="3vw" fill = "#fff" filter = "url(#f1)">
+      Sorry, your browser does not support inline SVG
+      </svg>
+    </div>
+  </div>
+
+  <div class="FindACat">
+    <div class="Explain">
+    <h3>Found</h3>
+    <h1 class="ClickHide">"Physics is finding a black cat in a dark room with a torch"</h1>
+    <h2 class="ClickHide">scroll down and find physics in the dark room</h2>
+    <h3>The Cat</h3>
+    </div>
+    <div class="line">
+      <hr style="height:1px; width:100%; border-width:0; color:black; background-color:black">
+    </div>
+    <p class="LightHover" onclick="appearBackground()">Physics</p>
+    <a class="LittleMenu" href="../Physics_SolarSystem/index.html">Animation/Simulation</a>
+    <a class="LittleMenu" href="#a">What I studied</a>
+    <a class="LittleMenu" href="#a">Personal Projects</a>
+    <a class="LittleMenu" href="#a">Extra</a>
+  </div>
+
+  <div class="MiniMenu">
+    <a href="../Home/index.html">Home</a>
+    <a href="#a">CV</a>
+    <a href="../Physics_Main/index.html">Physics</a>
+    <a href="#a">Coding</a>
+    <a href="#a">Maths</a>
+    <a href="#a">Tutoring</a>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

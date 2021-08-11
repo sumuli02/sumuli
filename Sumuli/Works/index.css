@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+/*Main*/
+h1 {color:black; font-size: 5vw; text-align: center;}
+#Home {font-size: 3vw; padding-left: 30vw; padding-top: 7vw;}
+a:hover {text-decoration: underline; color:blue}
+h2 {color:black; font-size: 4vw; text-align: center; padding-top: 4vw;}
+.SubDirectories {position: absolute; top: 20vw; left:18vw;width:100vw;}
+.SubDirectories a {font-size: 3vw; text-align: center; padding-top: 10vw; padding-left: 5vw;}
+.SubDirectories a:hover {text-decoration: underline; color:blue}
