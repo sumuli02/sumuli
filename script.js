@@ -17,7 +17,4 @@ function ScrollOn() {
   Castle.style.top = (350 + sY * 0.06) + "px";
 
 }
-function Hover() {
-  document.getElementById("demo").innerHTML = 5 + 6;
-  Demo.innerHTML = 5+5;
-}
+
