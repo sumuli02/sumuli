@@ -41,10 +41,10 @@ background-size: contain;;z-index: 100}
 .Doors h1 {position: absolute; left: 30vw; top: 39vw;color:transparent; width:40vw; text-align: center; font-size: 2.1vw; z-index:}
 .Doors:hover h1 {transition-delay: 2s; color:white; transition-duration: 1s; z-index: 5}
 
-.Doors #Box1 {position:absolute; top:52vw; left:30vw; background:#19002b; width: 40vw; height: 50px; }
+.Doors #Box1 {position:absolute; top:52vw; left:30vw; background:#19002b; width: 40vw; height: 7vw; }
 .Doors:hover #Box1 {transition-delay: 3.4s; background:transparent;z-index: 10}
 
-.Doors ul {position:absolute; left:38vw; top:55vw; width:490px;}
+.Doors ul {position:absolute; left:38vw; top:55vw; width:50vw;}
 .Doors li {position:absolute; top:1vw; display: inline-block; color:white; font-size: 1vw; padding-left: 1vw; padding-right: 1vw; z-index: 5}
 .Doors a {color:white; z-index: 5}
 
