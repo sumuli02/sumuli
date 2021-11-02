@@ -16,6 +16,7 @@ main,header,section,nav,footer{display:block;}
 footer {text-align:center;}
 .hide { position: absolute; left: -5000px;}
 
+body {margin: auto;}
 /*Main*/
 .Doors {width:1280px; background: #19002b; height:1360px;}
 .Doors #wallLeft {position:absolute; top:350px; left: 0px; width: 200px; height: 660px; background: grey;
