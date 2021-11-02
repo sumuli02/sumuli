@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*Reset*/
+html, body{width:100%;}
+html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body{width:100%; background:#fff; min-width:320px; -webkit-text-size-adjust:none;word-wrap:break-word;word-break:break-all;}
+body{border:none;font-size:12px;font-family:'Lato', sans-serif}
+
+html, body, h1, h2, h3, div, p, ul, li, section, nav, form, button{margin:0;padding:0;}
+ul,li{list-style:none; font-family: sans-serif;}
+a{color:#000;text-decoration:none;}
+a:link,a:hover,a:active{text-decoration:none;}
+img{border:0;}
+img, button {vertical-align: middle;}
+main,header,section,nav,footer{display:block;}
+footer {text-align:center;}
+.hide { position: absolute; left: -5000px;}
+
+body {width:1000px; height:1400px;background: linear-gradient(0.25turn, #000, #19002b 20%, #19002b 80%,#000)}
+/*Main*/
+.Doors {width:100px; background: radial-gradient(farthest-corner at 700px 500px, #364b80 1%, #19002b 35%); height:1400px; margin: auto;}
+.Doors #wallLeft {position:absolute; top:27vw; left: 20vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain; z-index: 150}
+.Doors #doorLeft {position:absolute; top:27vw; left: 30vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain;z-index: 120}
+.Doors #doorLeftM {position:absolute; top:27vw; left: 40vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain; z-index: 100}
+.Doors #wallRight {position:absolute; top:27vw; left: 70vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain; z-index: 150}
+.Doors #doorRight {position:absolute; top:27vw; left: 60vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain; z-index: 120}
+.Doors #doorRightM {position:absolute; top:27vw; left: 50vw; width: 10.05vw; height: 30vw; background: rgba(211, 227, 0245, 0.4) url(Door.png) no-repeat 0 0;
+background-size: contain;;z-index: 100}
+
+.Doors:hover #doorLeftM {position: absolute; left:24vw; transition-duration: 2s; transition-timing-function: linear}
+.Doors:hover #doorLeft {position: absolute; left:22vw; transition-delay: 1s; transition-duration: 1s; transition-timing-function: linear}
+
+.Doors:hover #doorRightM {position: absolute; left:66vw; transition-duration: 2s; transition-timing-function: linear}
+.Doors:hover #doorRight {position: absolute; left:68vw; transition-delay: 1s; transition-duration: 1s; transition-timing-function: linear}
+
+.Doors h1 {position: absolute; left: 30vw; top: 39vw;color:transparent; width:40vw; text-align: center; font-size: 2.1vw; z-index:}
+.Doors:hover h1 {transition-delay: 2s; color:white; transition-duration: 1s; z-index: 5}
+
+.Doors #Box1 {position:absolute; top:52vw; left:30vw; background:#19002b; width: 40vw; height: 50px; }
+.Doors:hover #Box1 {transition-delay: 3.4s; background:transparent;z-index: 10}
+
+.Doors ul {position:absolute; left:38vw; top:55vw; width:490px;}
+.Doors li {position:absolute; top:1vw; display: inline-block; color:white; font-size: 1vw; padding-left: 1vw; padding-right: 1vw; z-index: 5}
+.Doors a {color:white; z-index: 5}
+
+.Doors li:nth-child(1) {position:absolute; top:0px; left: -1vw; color:white; transition-delay: 0s; transition-duration: 0s;}
+.Doors li:nth-child(2) {position:absolute; top:0px; left: 10vw;}
+.Doors li:nth-child(3) {position:absolute; top:0px; left: 20vw;}
+
+.Doors li a{background:linear-gradient(#fff,#fff) center bottom no-repeat; background-size: 0% 0.3vw;
+padding-bottom: 0.03vw;}
+
+
+.Doors:hover li:nth-child(1){position:absolute; top:-4vw; transition-delay: 2s; transition-duration: 0.5s}
+.Doors:hover li:nth-child(2){position:absolute; top:-4vw; transition-delay: 2.4s; transition-duration: 0.5s}
+.Doors:hover li:nth-child(3){position:absolute; top:-4vw; transition-delay: 2.8s; transition-duration: 0.5s}
+
+.Doors li a:hover {transition-delay:0s; transition-duration: 0.5s;
+background-size: 100% 3px;}
+
+/*Original Position:: top:360px; left:250px;*/
+.Background #Cloud1 {position: absolute; top:25vw; left:27vw; background:url(Cloud1.png) no-repeat; background-size: contain; width:40vw; height:30vw; z-index: 0}
+.Background #Moon {position: absolute; top:25vw; left:27vw; background:url(Moon.png) no-repeat; background-size: contain; width:40vw; height:30vw; z-index: 0; margin: auto}
+.Background #Cloud2 {position: absolute; top:25vw; left:27vw; background:url(Cloud2.png) no-repeat; background-size: contain; width:40vw; height:30vw; z-index: 0}
+.Background #Castle {position: absolute; top:25vw; left:27vw; background:url(Castle.png) no-repeat 4vw 0; background-size: contain; width:40vw; height:30vw; z-index: 0}
+
+
+.snow {border-radius: 50%; opacity: 0.8; background-color: black; width:1000px; height:1000px;}
+.layer1{width: 1.5rem; height: 1.5rem; filter:blur(1.5px); box-shadow: 50px 50px 0 1rem #fff, 100px 100px 0 1rem #fff; }
+
+
+
+
+
+/*Door*/
